@@ -23,6 +23,7 @@ Data and Description can be found here [UCI Machine Learning Repository](http://
 
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
+| Command | Description |
 | --- | --- |
 | **Data Set Characteristics:** | Multivariate, Time-Series|	
 | **Attribute Characteristics:** | N/A|
