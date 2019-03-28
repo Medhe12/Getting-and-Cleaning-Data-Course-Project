@@ -53,6 +53,9 @@ colnames(X_merged) <- colnames_features[mean_std_vars[,1],2]
 # From the data set in step 4, creating a second, independent tidy data set with the average
 # of each variable for each activity and each subject.
 colnames(Sub_merged) <- "subject"
+# merging the entire required subset of data columns
 total <- cbind(X_merged, activitylabel, Sub_merged)
+# computing the mean 
 total_mean <- total %>% group_by(activitylabel, subject) %>% summarize_each(funs(mean))
+# storig the final tidy data into a data table
 write.table(total_mean, file = "./UCI HAR Dataset/tidydata.txt", row.names = FALSE, col.names = TRUE)
