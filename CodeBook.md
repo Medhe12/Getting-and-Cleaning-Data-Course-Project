@@ -4,7 +4,7 @@ Author: Medha Sawhney
 
 Date: "29.03.2019"
  
-Output: "tidydata.txt""
+Output: "tidydata.txt"
 
 ## CodeBook
 
@@ -23,21 +23,15 @@ Data and Description can be found here [UCI Machine Learning Repository](http://
 
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-
-
-
-| | |
-|  |  |
-| **Data Set Characteristics:  **| Multivariate, Time-Series|	
-| **Attribute Characteristics:**| N/A|
-| **Associated Tasks:**| Classification, Clustering|
-| **Number of Instances:**| 10299|
-| **Number of Attributes:**| 561  |
-| **Missing Values?:**| N/A |
-| **Area:**| Computer|
-
-| **Date Donated:**| 2012-12-10|
-
+| --- | --- |
+| **Data Set Characteristics:** | Multivariate, Time-Series|	
+| **Attribute Characteristics:** | N/A|
+| **Associated Tasks:** | Classification, Clustering|
+| **Number of Instances:** | 10299|
+| **Number of Attributes:** | 561  |
+| **Missing Values?:** | N/A |
+| **Area:** | Computer |
+| **Date Donated:** | 2012-12-10 |
 | **Number of Web Hits:**| 794361|
 
 
