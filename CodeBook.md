@@ -23,7 +23,7 @@ Data and Description can be found here [UCI Machine Learning Repository](http://
 
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-| Command | Description |
+| Characteristics | Description |
 | --- | --- |
 | **Data Set Characteristics:** | Multivariate, Time-Series|	
 | **Attribute Characteristics:** | N/A|
@@ -56,13 +56,13 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment.
 
 
-# Summary for tidydata.txt and run_analysis.R
+## Summary for tidydata.txt and run_analysis.R
 
 **Input** : UCI HAR Dataset downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 **Output** : tidydata.txt
 
-## Pre-Processing steps performed on Raw Data:
+### Pre-Processing steps performed on Raw Data:
 
  1. Merge the training and the test sets to create one data set.
  2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -72,7 +72,7 @@ For each record in the dataset it is provided:
 
 
 
-## 1. MERGING TRAINING & TESTING DATA-SETS
+#### 1. MERGING TRAINING & TESTING DATA-SETS
 
 The train and test text files were imported and merged.
 Column names were assigned at the time each file was imported, before merging. 
@@ -80,7 +80,7 @@ All the files were imported individually such as, Train_X, Test_X, etc. Files we
 The test and train versions of all files were merged together before merging the entire data set together. 
 The features and activity_labels files were assigned and merged later.
 
-###Text Files Imported:
+#### Text Files Imported:
 
 - 'features.txt'
 - 'activity_labels.txt'
@@ -91,19 +91,19 @@ The features and activity_labels files were assigned and merged later.
 - 'x_test.txt'
 - 'y_test.txt'
 
-##2. EXTRACTING MEASUREMENTS ON MEAN & STANDARD DEVIATION
+#### 2. EXTRACTING MEASUREMENTS ON MEAN & STANDARD DEVIATION
 A logical vector was created identifying TRUE for the ID, mean & stdev columns and FALSE for other values. Merged data was then subsetted to only keep the relevant columns
 
-##3. RENAME ACTIVITIES IN DATA SET WITH DESCRIPTIVE ACTIVITY NAMES
+#### 3. RENAME ACTIVITIES IN DATA SET WITH DESCRIPTIVE ACTIVITY NAMES
 Values in 'activity' column were replaced with the matching values from the 'activitylabel' column in order to make the data easier to read.
 
-##4. APPROPRIATELY LABEL DATA SET WITH DESCRIPTIVE ACTIVITY NAMES
+#### 4. APPROPRIATELY LABEL DATA SET WITH DESCRIPTIVE ACTIVITY NAMES
 Added the column names for merged X train and test data sets, by only adding feature variables for mean and std data.
 
-##5. INDEPENDNENT TIDY DATA SET CREATED WITH AVERAGE FOR EACH VARIABLE & EACH SUBJECT
+#### 5. INDEPENDNENT TIDY DATA SET CREATED WITH AVERAGE FOR EACH VARIABLE & EACH SUBJECT
 New table was created which contains average for each variable for each activity and subject.
 
-# Tidy data set description
+## Tidy data set description
 
 ### The variables in the tidy data
 Tidy data contains 180 rows and 68 columns. Each row has averaged variables for each subject and each activity.
