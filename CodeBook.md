@@ -1,7 +1,9 @@
 # Getting and Cleaning Data Project CodeBook
 
 Author: Medha Sawhney
-Date: "29.03.2019" 
+
+Date: "29.03.2019"
+ 
 Output: "tidydata.txt""
 
 ## CodeBook
