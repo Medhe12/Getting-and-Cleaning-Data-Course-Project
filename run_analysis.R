@@ -42,12 +42,12 @@ mean_std_vars <- colnames_features[grep("mean\\(\\)|std\\(\\)",colnames_features
 # using a vector of only the variables needed, we get a subset of X_merged based on what is needed
 X_merged <- X_merged[,mean_std_vars[,1]]
 
-# Using descriptive activity names to name the activities in the data set
+# Using descriptive activity names to name the activities in the data set from the given list of activity labels
 colnames(Y_merged) <- "activity"
 Y_merged$activitylabel <- factor(Y_merged$activity, labels = as.character(rownames_activity_labels[,2]))
 activitylabel <- Y_merged[,-1]
 
-# Appropriately labeling the data set with descriptive variable names.
+# Appropriately labeling the data set with descriptive variable names from the given list of features
 colnames(X_merged) <- colnames_features[mean_std_vars[,1],2]
 
 # From the data set in step 4, creating a second, independent tidy data set with the average
